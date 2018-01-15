@@ -15,6 +15,7 @@
 		C7F85D542008C9750057BC8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F85D522008C9750057BC8E /* Main.storyboard */; };
 		C7F85D562008C9750057BC8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F85D552008C9750057BC8E /* Assets.xcassets */; };
 		C7F85D592008C9750057BC8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F85D572008C9750057BC8E /* LaunchScreen.storyboard */; };
+		C7F85D632008F04B0057BC8E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85D622008F04B0057BC8E /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C7F85D552008C9750057BC8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7F85D582008C9750057BC8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7F85D5A2008C9750057BC8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F85D622008F04B0057BC8E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C7F85D4C2008C9750057BC8E /* Actions.sks */,
 				C7F85D4E2008C9750057BC8E /* GameScene.swift */,
 				C7F85D502008C9750057BC8E /* GameViewController.swift */,
+				C7F85D622008F04B0057BC8E /* MenuViewController.swift */,
 				C7F85D522008C9750057BC8E /* Main.storyboard */,
 				C7F85D552008C9750057BC8E /* Assets.xcassets */,
 				C7F85D572008C9750057BC8E /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				C7F85D4F2008C9750057BC8E /* GameScene.swift in Sources */,
 				C7F85D512008C9750057BC8E /* GameViewController.swift in Sources */,
 				C7F85D492008C9750057BC8E /* AppDelegate.swift in Sources */,
+				C7F85D632008F04B0057BC8E /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

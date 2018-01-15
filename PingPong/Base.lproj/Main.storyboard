@@ -1,15 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqa-pb-o3h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="pK7-HX-vbA">
+            <objects>
+                <viewController id="2t6-Yh-WbM" customClass="MenuViewController" customModule="PingPong" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2m3-GR-9Yc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9em-Vz-las">
+                                <rect key="frame" x="124" y="328.5" width="126" height="30"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="easyModeButtonPressed:" destination="2t6-Yh-WbM" eventType="touchUpInside" id="g59-pN-3py"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RT-kW-W0g">
+                                <rect key="frame" x="124" y="373.5" width="126" height="30"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="mediumModeButtonPressed:" destination="2t6-Yh-WbM" eventType="touchUpInside" id="AS0-hb-ZDP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-Oj-dzA">
+                                <rect key="frame" x="124" y="418.5" width="126" height="30"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="hardModeButtonPressed:" destination="2t6-Yh-WbM" eventType="touchUpInside" id="dzd-DE-qPm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjD-7Y-9sY" userLabel="logoView">
+                                <rect key="frame" x="73" y="38" width="228" height="172"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menuIke" translatesAutoresizingMaskIntoConstraints="NO" id="ceD-L0-oAB">
+                                        <rect key="frame" x="8" y="8" width="92" height="151"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IKE PONG GAME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yip-I0-I8x">
+                                        <rect key="frame" x="104" y="11" width="124" height="151"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="0bT-QS-2oG"/>
+                                    <constraint firstAttribute="height" constant="172" id="wWp-bx-gEr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-s2-DQH">
+                                <rect key="frame" x="124" y="283.5" width="126" height="30"/>
+                                <color key="backgroundColor" red="0.65793502330780029" green="0.83088654279708862" blue="0.92794579267501831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2 players"/>
+                                <connections>
+                                    <action selector="twoPlayersButtonPressed:" destination="2t6-Yh-WbM" eventType="touchUpInside" id="mlF-AU-ioi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hhB-s2-DQH" firstAttribute="height" secondItem="9em-Vz-las" secondAttribute="height" id="3V2-vN-dMk"/>
+                            <constraint firstItem="8RT-kW-W0g" firstAttribute="height" secondItem="9em-Vz-las" secondAttribute="height" id="5I8-Wa-Aem"/>
+                            <constraint firstItem="bXa-Oj-dzA" firstAttribute="centerX" secondItem="7fN-wn-U0h" secondAttribute="centerX" id="KUf-NK-5ci"/>
+                            <constraint firstItem="8RT-kW-W0g" firstAttribute="width" secondItem="9em-Vz-las" secondAttribute="width" id="LEX-TZ-EtM"/>
+                            <constraint firstItem="8RT-kW-W0g" firstAttribute="centerX" secondItem="7fN-wn-U0h" secondAttribute="centerX" id="OGu-Us-y5z"/>
+                            <constraint firstItem="9em-Vz-las" firstAttribute="leading" secondItem="7fN-wn-U0h" secondAttribute="leading" constant="124" id="Q63-dc-yoI"/>
+                            <constraint firstItem="8RT-kW-W0g" firstAttribute="top" secondItem="9em-Vz-las" secondAttribute="bottom" constant="15" id="U3Z-fX-tGh"/>
+                            <constraint firstItem="7fN-wn-U0h" firstAttribute="trailing" secondItem="9em-Vz-las" secondAttribute="trailing" constant="125" id="cst-n9-E80"/>
+                            <constraint firstItem="hhB-s2-DQH" firstAttribute="centerX" secondItem="7fN-wn-U0h" secondAttribute="centerX" id="d9g-Bk-hIj"/>
+                            <constraint firstItem="hhB-s2-DQH" firstAttribute="width" secondItem="9em-Vz-las" secondAttribute="width" id="fMV-sj-FO0"/>
+                            <constraint firstItem="9em-Vz-las" firstAttribute="centerY" secondItem="7fN-wn-U0h" secondAttribute="centerY" id="g9b-MD-F4d"/>
+                            <constraint firstItem="FjD-7Y-9sY" firstAttribute="centerX" secondItem="7fN-wn-U0h" secondAttribute="centerX" id="iwv-v2-Szr"/>
+                            <constraint firstItem="bXa-Oj-dzA" firstAttribute="width" secondItem="8RT-kW-W0g" secondAttribute="width" id="jAt-Ad-og0"/>
+                            <constraint firstItem="bXa-Oj-dzA" firstAttribute="top" secondItem="8RT-kW-W0g" secondAttribute="bottom" constant="15" id="osT-ev-tFK"/>
+                            <constraint firstItem="9em-Vz-las" firstAttribute="top" secondItem="hhB-s2-DQH" secondAttribute="bottom" constant="15" id="qO6-mX-hlO"/>
+                            <constraint firstItem="bXa-Oj-dzA" firstAttribute="height" secondItem="8RT-kW-W0g" secondAttribute="height" id="wxN-TU-SdM"/>
+                            <constraint firstItem="FjD-7Y-9sY" firstAttribute="top" secondItem="7fN-wn-U0h" secondAttribute="top" constant="18" id="znk-i4-C8z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7fN-wn-U0h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aZ0-18-vHD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XL5-tY-OyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="134"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameVC" id="BV1-FR-VrT" customClass="GameViewController" customModule="PingPong" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +110,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="512.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fxx-R7-7us">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sqa-pb-o3h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SKs-rh-jut">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2t6-Yh-WbM" kind="relationship" relationship="rootViewController" id="U8r-fh-Hpr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JY6-Kq-vc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menuIke" width="500" height="764"/>
+    </resources>
 </document>
